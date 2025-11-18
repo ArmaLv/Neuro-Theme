@@ -3,8 +3,8 @@
 Neuro-Sama theme for BetterDiscord theming
 
 ## Chat Preview
-![Chat Preview](Peview.png)
-- This is how Discord will look. Re-Skinned style from pre-existing
+![Chat Preview](./Preview.png)
+- This is how Discord will look. Re-Skinned style from pre-existing style `https://refact0r.github.io/midnight-discord/midnight.css`
 
 ## 📦 Installation
 
