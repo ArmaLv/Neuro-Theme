@@ -1,82 +1,60 @@
-@import url('https://refact0r.github.io/midnight-discord/midnight.css');
+/**
+ * @name Neuro
+ * @description A warm salmon-on-plum Discord theme built on refact0r's Midnight. Neuro-sama inspired.
+ * @author ArmaLatv
+ * @version 2.0.0
+ * @source https://github.com/ArmaLv/Neuro-Theme
+*/
 
-/* Root Color Variables */
-:root {
-  --font: 'Figtree', sans-serif;
-  --corner-text: 'Midnight';
-  --online-indicator: #efaaa2;
-  --dnd-indicator: #c04c39;
-  --idle-indicator: #f4a88a;
-  --streaming-indicator: #621424;
-  --accent-1: #efaaa2;
-  --accent-2: #c04c39;
-  --accent-3: #f4a88a;
-  --accent-4: #621424;
-  --accent-5: #a7666d;
-  --mention: hsla(0, 0%, 100%, 0.1);
-  --mention-hover: hsla(0, 0%, 100%, 0.05);
-  --text-0: #eea79d;
-  --text-1: #eea79d;
-  --text-2: #eea79d;
-  --text-3: #eea79d;
-  --text-4: #eea79d;
-  --text-5: #eea79d;
-  --bg-1: #2d2633;
-  --bg-2: #2d2633;
-  --bg-3: #2d2633;
-  --bg-4: #2d2633;
-  --hover: hsla(0, 0%, 0%, 0.1);
-  --active: hsla(0, 0%, 0%, 0.2);
-  --message-hover: hsla(0, 0%, 0%, 0.1);
-  --button-bg: #633841;
-  --button-bg-hover: #7a4e5f;
-  --button-bg-active: #4e2f3a;
-  --button-text: #ffffff;
-  --spacing: 12px;
-  --list-item-transition: 0.2s ease;
-  --unread-bar-transition: 0.2s ease;
-  --moon-spin-transition: 0.4s ease;
-  --icon-spin-transition: 1s ease;
-  --roundness-xl: 22px;
-  --roundness-l: 20px;
-  --roundness-m: 16px;
-  --roundness-s: 12px;
-  --roundness-xs: 10px;
-  --roundness-xxs: 8px;
-  --discord-icon: none;
-  --moon-icon: block;
-  --moon-icon-url: url('https://upload.wikimedia.org/wikipedia/commons/c/c4/Font_Awesome_5_solid_moon.svg');
-  --moon-icon-size: auto;
-  --login-bg-filter: saturate(0.3) hue-rotate(-15deg) brightness(0.4);
-  --green-to-accent-3-filter: hue-rotate(56deg) saturate(1.43);
-  --blurple-to-accent-3-filter: hue-rotate(304deg) saturate(0.84) brightness(1.2);
-  --windows-nav: none;
-  --custom-nav: block;
-}
-
-/* Global Text Color */
-* {
-  color: var(--text-0) !important;
-}
+@import url('https://refact0r.github.io/midnight-discord/build/midnight.css');
 
 body {
-  background-color: var(--bg-4);
+  --font: 'figtree';
+  --code-font: '';
+  --gap: 12px;
+  --animations: on;
+  --custom-window-controls: on;
+  --window-control-size: 14px;
+  --custom-dms-icon: custom;
+  --dms-icon-svg-url: url('https://refact0r.github.io/midnight-discord/assets/Font_Awesome_5_solid_moon.svg');
+  --dms-icon-svg-size: 90%;
+  --small-user-panel: on;
+  --list-item-transition: 0.2s ease;
+  --dms-icon-svg-transition: 0.4s ease;
 }
 
-.button {
-  background-color: var(--button-bg);
-  color: var(--button-text);
-  border: none;
-  padding: 8px 16px;
-  border-radius: var(--roundness-xs);
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
+:root {
+  --colors: on;
 
-.button:hover {
-  background-color: var(--button-bg-hover);
-}
+  --text-0: hsl(338, 24%, 12%);
+  --text-1: hsl(8, 78%, 88%);
+  --text-2: hsl(7, 65%, 78%);
+  --text-3: hsl(7, 34%, 63%);
+  --text-4: hsl(7, 22%, 50%);
+  --text-5: hsl(7, 18%, 38%);
 
-.button:active {
-  background-color: var(--button-bg-active);
+  --bg-1: hsl(278, 15%, 22%);
+  --bg-2: hsl(278, 15%, 17%);
+  --bg-3: hsl(278, 16%, 14%);
+  --bg-4: hsl(278, 18%, 10%);
+
+  --hover: hsla(338, 40%, 60%, 0.08);
+  --active: hsla(338, 40%, 60%, 0.14);
+  --active-2: hsla(338, 40%, 60%, 0.20);
+  --message-hover: hsla(0, 0%, 0%, 0.12);
+
+  --accent-1: hsl(6, 76%, 76%);
+  --accent-2: hsl(7, 68%, 66%);
+  --accent-3: hsl(8, 60%, 54%);
+  --accent-4: hsl(9, 58%, 47%);
+  --accent-5: hsl(10, 55%, 39%);
+
+  --mention: hsla(7, 70%, 70%, 0.10);
+  --mention-hover: hsla(7, 70%, 70%, 0.06);
+
+  --online: hsl(6, 76%, 76%);
+  --dnd: hsl(8, 58%, 50%);
+  --idle: hsl(17, 80%, 74%);
+  --streaming: hsl(349, 60%, 30%);
+  --offline: var(--text-5);
 }
