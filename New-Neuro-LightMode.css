@@ -1,0 +1,121 @@
+/**
+ * @name New-Neuro-LightMode
+ * @description A warm cream-and-cyan light Discord theme built on refact0r's Midnight. Neuro-sama inspired.
+ * @author ArmaLatv
+ * @version 1.0.0
+ * @source https://github.com/ArmaLv/Neuro-Theme
+*/
+
+@import url('https://refact0r.github.io/midnight-discord/build/midnight.css');
+@import url('https://discordstyles.github.io/RadialStatus/RadialStatus.css');
+
+body {
+  --font: 'figtree';
+  --code-font: '';
+
+  --gap: 12px;
+  --top-bar-height: 18px;
+  --divider-thickness: 4px;
+  --border-thickness: 1px;
+  --chatbar-height: 47px;
+  --custom-guild-list-padding: 12px;
+  --border-hover-transition: 0.2s ease;
+  --elevation-low: none;
+  --elevation-medium: none;
+  --elevation-high: none;
+
+  --animations: on;
+  --list-item-transition: 0.2s ease;
+  --dms-icon-svg-transition: 0.4s ease;
+
+  --top-bar-button-position: titlebar;
+  --top-bar-title-position: off;
+  --subtle-top-bar-title: off;
+
+  --custom-window-controls: on;
+  --window-control-size: 14px;
+
+  --small-user-panel: on;
+
+  --custom-dms-icon: custom;
+  --dms-icon-svg-url: url('https://raw.githubusercontent.com/ArmaLv/Neuro-Theme/refs/heads/main/neuro-gear.svg');
+  --dms-icon-svg-size: 90%;
+  --dms-icon-color-before: var(--icon-subtle);
+  --dms-icon-color-after: var(--white);
+  --custom-dms-background: off;
+  --dms-background-image-url: url('');
+  --dms-background-image-size: cover;
+  --dms-background-color: linear-gradient(70deg, var(--accent-3), var(--accent-2), var(--accent-1));
+
+  --panel-blur: off;
+  --blur-amount: 12px;
+  --transparency-tweaks: off;
+  --remove-bg-layer: off;
+
+  --background-image: off;
+  --background-image-url: url('');
+
+  --custom-chatbar: off;
+}
+
+:root {
+  --colors: on;
+
+  --text-0: hsl(20, 28%, 16%);
+  --text-1: hsl(14, 26%, 20%);
+  --text-2: hsl(12, 20%, 30%);
+  --text-3: hsl(10, 18%, 40%);
+  --text-4: hsl(14, 17%, 50%);
+  --text-5: hsl(18, 18%, 60%);
+
+  --bg-1: hsl(24, 43%, 75%);
+  --bg-2: hsl(27, 62%, 86%);
+  --bg-3: hsl(27, 86%, 89%);
+  --bg-4: hsl(30, 92%, 91%);
+
+  --hover: hsla(181, 45%, 38%, 0.12);
+  --active: hsla(181, 45%, 38%, 0.18);
+  --active-2: hsla(181, 45%, 38%, 0.26);
+  --message-hover: hsla(18, 30%, 30%, 0.05);
+
+  --accent-1: hsl(183, 46%, 40%);
+  --accent-2: hsl(180, 52%, 60%);
+  --accent-3: hsl(181, 48%, 52%);
+  --accent-4: hsl(183, 47%, 44%);
+  --accent-5: hsl(185, 47%, 37%);
+  --accent-new: var(--accent-2);
+
+  --mention: hsla(180, 55%, 48%, 0.16);
+  --mention-hover: hsla(180, 55%, 48%, 0.09);
+  --reply: linear-gradient(to right, color-mix(in hsl, var(--text-3), transparent 90%) 40%, transparent);
+  --reply-hover: linear-gradient(to right, color-mix(in hsl, var(--text-3), transparent 95%) 40%, transparent);
+
+  --online: hsl(174, 52%, 48%);
+  --dnd: hsl(344, 56%, 50%);
+  --idle: hsl(30, 72%, 60%);
+  --streaming: hsl(233, 45%, 68%);
+  --offline: var(--text-5);
+
+  --border-light: var(--hover);
+  --border: var(--active);
+  --border-hover: var(--active);
+  --button-border: hsla(20, 28%, 28%, 0.14);
+}
+:root {
+  --rs-small-spacing: 2px;
+  --rs-medium-spacing: 3px;
+  --rs-large-spacing: 4px;
+  --rs-small-width: 2px;
+  --rs-medium-width: 3px;
+  --rs-large-width: 4px;
+  --rs-avatar-shape: 50%;
+  --rs-online-color: var(--online);
+  --rs-idle-color: var(--idle);
+  --rs-dnd-color: var(--dnd);
+  --rs-offline-color: var(--offline);
+  --rs-streaming-color: var(--streaming);
+  --rs-invisible-color: var(--text-5);
+  --rs-self-speaking-color: var(--online);
+  --rs-phone-color: var(--online);
+  --rs-phone-visible: block;
+}

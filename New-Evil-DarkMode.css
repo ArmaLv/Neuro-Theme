@@ -1,0 +1,121 @@
+/**
+ * @name New-Evil-DarkMode
+ * @description A blood-red-on-charcoal dark Discord theme built on refact0r's Midnight. Evil Neuro inspired.
+ * @author ArmaLatv
+ * @version 1.0.0
+ * @source https://github.com/ArmaLv/Neuro-Theme
+*/
+
+@import url('https://refact0r.github.io/midnight-discord/build/midnight.css');
+@import url('https://discordstyles.github.io/RadialStatus/RadialStatus.css');
+
+body {
+  --font: 'figtree';
+  --code-font: '';
+
+  --gap: 12px;
+  --top-bar-height: 18px;
+  --divider-thickness: 4px;
+  --border-thickness: 1px;
+  --chatbar-height: 47px;
+  --custom-guild-list-padding: 12px;
+  --border-hover-transition: 0.2s ease;
+  --elevation-low: none;
+  --elevation-medium: none;
+  --elevation-high: none;
+
+  --animations: on;
+  --list-item-transition: 0.2s ease;
+  --dms-icon-svg-transition: 0.4s ease;
+
+  --top-bar-button-position: titlebar;
+  --top-bar-title-position: off;
+  --subtle-top-bar-title: off;
+
+  --custom-window-controls: on;
+  --window-control-size: 14px;
+
+  --small-user-panel: on;
+
+  --custom-dms-icon: custom;
+  --dms-icon-svg-url: url('https://raw.githubusercontent.com/ArmaLv/Neuro-Theme/refs/heads/main/neuro-gear.svg');
+  --dms-icon-svg-size: 90%;
+  --dms-icon-color-before: var(--icon-subtle);
+  --dms-icon-color-after: var(--white);
+  --custom-dms-background: off;
+  --dms-background-image-url: url('');
+  --dms-background-image-size: cover;
+  --dms-background-color: linear-gradient(70deg, var(--accent-3), var(--accent-2), var(--accent-1));
+
+  --panel-blur: off;
+  --blur-amount: 12px;
+  --transparency-tweaks: off;
+  --remove-bg-layer: off;
+
+  --background-image: off;
+  --background-image-url: url('');
+
+  --custom-chatbar: off;
+}
+
+:root {
+  --colors: on;
+
+  --text-0: hsl(12, 30%, 92%);
+  --text-1: hsl(12, 38%, 84%);
+  --text-2: hsl(10, 22%, 70%);
+  --text-3: hsl(8, 15%, 55%);
+  --text-4: hsl(8, 14%, 45%);
+  --text-5: hsl(8, 12%, 34%);
+
+  --bg-1: hsl(330, 5%, 23%);
+  --bg-2: hsl(332, 6%, 17%);
+  --bg-3: hsl(336, 10%, 12%);
+  --bg-4: hsl(340, 22%, 8%);
+
+  --hover: hsla(344, 55%, 45%, 0.10);
+  --active: hsla(344, 55%, 45%, 0.16);
+  --active-2: hsla(344, 55%, 45%, 0.24);
+  --message-hover: hsla(0, 0%, 0%, 0.15);
+
+  --accent-1: hsl(345, 58%, 56%);
+  --accent-2: hsl(344, 55%, 46%);
+  --accent-3: hsl(343, 55%, 36%);
+  --accent-4: hsl(341, 58%, 30%);
+  --accent-5: hsl(338, 62%, 25%);
+  --accent-new: var(--accent-2);
+
+  --mention: hsla(338, 62%, 32%, 0.22);
+  --mention-hover: hsla(338, 62%, 32%, 0.14);
+  --reply: linear-gradient(to right, color-mix(in hsl, var(--text-3), transparent 90%) 40%, transparent);
+  --reply-hover: linear-gradient(to right, color-mix(in hsl, var(--text-3), transparent 95%) 40%, transparent);
+
+  --online: hsl(145, 38%, 48%);
+  --dnd: hsl(344, 60%, 48%);
+  --idle: hsl(32, 55%, 55%);
+  --streaming: hsl(280, 35%, 45%);
+  --offline: var(--text-5);
+
+  --border-light: var(--hover);
+  --border: var(--active);
+  --border-hover: var(--active);
+  --button-border: hsla(344, 40%, 55%, 0.14);
+}
+:root {
+  --rs-small-spacing: 2px;
+  --rs-medium-spacing: 3px;
+  --rs-large-spacing: 4px;
+  --rs-small-width: 2px;
+  --rs-medium-width: 3px;
+  --rs-large-width: 4px;
+  --rs-avatar-shape: 50%;
+  --rs-online-color: var(--online);
+  --rs-idle-color: var(--idle);
+  --rs-dnd-color: var(--dnd);
+  --rs-offline-color: var(--offline);
+  --rs-streaming-color: var(--streaming);
+  --rs-invisible-color: var(--text-5);
+  --rs-self-speaking-color: var(--online);
+  --rs-phone-color: var(--online);
+  --rs-phone-visible: block;
+}
